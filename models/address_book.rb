@@ -9,6 +9,7 @@ class AddressBook
 
 
   def add_entry(name, phone_number, email)
+    puts "><><><><><><><>< #{name} - #{phone_number} - #{email}"
     index = 0
     @entries.each do |entry|
 
