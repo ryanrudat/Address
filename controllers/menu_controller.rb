@@ -14,8 +14,7 @@ class MenuController
     puts "2 - Create an entry"
     puts "3 - Search for an entry"
     puts "4 - Import entries from CSV"
-    puts "5 - View Entry Number n"
-    puts "6 - Exit"
+    puts "5 - Exit"
     print "Enter your selection: "
 
     selection = gets.to_i
@@ -57,19 +56,7 @@ class MenuController
       end
     end
 
-    def entry_n_submenu
-      print "Entry number to view: "
-      selection = gets.chomp.to_i
 
-      if selection < @address_book.entries.count
-        puts @address_book.entries[selection]
-        puts "Press enter to return to main menu"
-        gets.chomp
-        system "clear"
-      else
-        puts "#{selection} enter valid number"
-        entry_n_submenu
-    end
 
       # stub the rest of the methods called in main_menu
     def view_all_entries
