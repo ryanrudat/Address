@@ -8,9 +8,13 @@ class AddressBook
     @entries = []
   end
 
+  def nuke_it
+    @entries = []
+  end
+
 
   def add_entry(name, phone_number, email)
-    puts "><><><>< #{name} - #{phone_number} - #{email}"
+    # puts "><><><>< #{name} - #{phone_number} - #{email}"
     index = 0
     @entries.each do |entry|
 
@@ -75,5 +79,9 @@ class AddressBook
 
     return nil
   end
+
+  # def nuke_it
+  #
+  # end
 
 end
